@@ -3,20 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Calculator</title>
-    <script type="text/javascript" src="../vendors/jquery.min.js"></script>
+    <script type="text/javascript" src="vendors/jquery.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
 </head>
 
 <body>
+    <form id="inputForm">
         <span>First value: </span><input type="text" name="first-value">
         <span>Second value: </span><input type="text" name="second-value">
-        <input list="operation">
-            <datalist id="operation">
-                <option value="add"></option>
-                <option value="subtract"></option>
-                <option value="multiply"></option>
-                <option value="divide"></option>
-            </datalist>
-        <input type="submit" value="Submit">
+        <div class="operation" id="add">+</div>
+        <div class="operation" id="subtract">-</div>
+        <div class="operation" id="multiply">*</div>
+        <div class="operation" id="divide">/</div>
     </form>
 
 </body>
