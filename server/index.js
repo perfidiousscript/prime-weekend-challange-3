@@ -2,10 +2,10 @@ var express = require('express');
 var app = express();
 var path = require('path');
 var bodyParser = require('body-parser');
-var add = require('add.js');
-var subtract = require('subtract.js');
-var multiply = require('multiply.js');
-var divide = require ('divide.js')
+var add = require('./add.js');
+var subtract = require('./subtract.js');
+var multiply = require('./multiply.js');
+var divide = require ('./divide.js')
 
 app.set('port', process.env.PORT || 5000);
 

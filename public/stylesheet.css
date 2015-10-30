@@ -1,0 +1,13 @@
+.operation{
+    background-color: lightblue;
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    margin: 5px 5px;
+    text-align: center;
+    padding: auto;
+}
+
+#operators {
+    display: inline;
+}

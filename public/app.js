@@ -1,16 +1,13 @@
 var values = {};
 
 $(document).ready(function(){
-    $('#submit').on('click', function(event){
+    $('#operators').on('click','.operation', function(event){
         event.preventDefault(event);
-        stripForm($(this).parent('form'));
+        stripForm($('form'));
     });
 });
 
-event.preventDefault
-
 function stripForm(formEntry){
-
     console.log(formEntry);
     $.each($(formEntry).serializeArray(), function(i,field){
         values[field.name] = field.value;
