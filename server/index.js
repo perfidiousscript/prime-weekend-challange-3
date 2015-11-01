@@ -10,7 +10,9 @@ app.use(urlParser);
 app.set('port', process.env.PORT || 5000);
 
 app.post('/calculate', function(req,res){
-    var req.body
+    var answer = {};
+    answer.value = (calculate(req.body));
+    res.send(answer);
 });
 
 app.get('/*', function(req,res){

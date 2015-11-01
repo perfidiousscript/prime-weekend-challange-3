@@ -9,7 +9,10 @@ $(document).ready(function(){
             $.ajax({
                 url: '/calculate',
                 type: 'POST',
-                data: values
+                data: values,
+                success: function(response){
+                    console.log("This is the response: ", response.value)
+                }
             });
         })
 });
@@ -24,5 +27,6 @@ function stripForm(formEntry){
     console.log(values);
 }
 
-function answerOnDom(){
+function answerOnDom(answer){
+    $()
 }
