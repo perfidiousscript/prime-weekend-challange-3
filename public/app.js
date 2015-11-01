@@ -11,9 +11,12 @@ $(document).ready(function(){
                 type: 'POST',
                 data: values,
                 success: function(response){
-                    console.log("This is the response: ", response.value)
+                    answerOnDom(response.value)
                 }
             });
+        });
+        $('#clear').on('click', function(){
+            $('#answer').children('span').text("");
         })
 });
 
@@ -28,5 +31,5 @@ function stripForm(formEntry){
 }
 
 function answerOnDom(answer){
-    $()
+    $('#answer').children('span').text(answer);
 }
