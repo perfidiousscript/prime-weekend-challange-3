@@ -2,12 +2,16 @@ var express = require('express');
 var app = express();
 var path = require('path');
 var bodyParser = require('body-parser');
-var add = require('./add.js');
-var subtract = require('./subtract.js');
-var multiply = require('./multiply.js');
-var divide = require ('./divide.js')
+var calculate = require('./calculate.js');
+var urlParser = bodyParser.urlencoded();
+
+app.use(urlParser);
 
 app.set('port', process.env.PORT || 5000);
+
+app.post('/calculate', function(req,res){
+    var req.body
+});
 
 app.get('/*', function(req,res){
     var file = req.params[0] || "index.html";
